@@ -39,4 +39,14 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:22.2.0'
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply plugin: 'maven'
+
+group = 'co.inbox'
+version = '1.0.0'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://$System.env.HOME/.m2/inbox")
+        }
+    }
+}
