@@ -41,7 +41,7 @@ dependencies {
 
 apply plugin: 'maven'
 
-group = 'co.inbox'
+group = 'co.inbox.android-header-decor'
 version = '1.0.0'
 uploadArchives {
     repositories {
