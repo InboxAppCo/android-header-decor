@@ -46,5 +46,4 @@ public class DoubleHeaderFragment extends BaseDecorationFragment {
 
         return super.onOptionsItemSelected(item);
     }
-
 }
