@@ -43,10 +43,11 @@ apply plugin: 'maven'
 
 group = 'co.inbox.android-header-decor'
 version = '1.0-SNAPSHOT'
+
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file://$System.env.HOME/.m2/inbox")
+            repository(url: "file://$System.env.HOME/.m2/inbox-snapshots")
         }
     }
 }
